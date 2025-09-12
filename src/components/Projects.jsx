@@ -5,7 +5,7 @@ const Projects = () => {
   const projects = [
     {
       title: "Portfolio Website",
-      link: "#",
+      link: "https://ompimplepersonalportfolio.netlify.app/",
       desc: "My personal portfolio built with React + Tailwind.",
       img: "",
       className: "",
