@@ -1,12 +1,61 @@
-# React + Vite
+# 🌸 My Personal Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Welcome to my personal portfolio website built with **React, Tailwind CSS, and Framer Motion**.  
+This project showcases my skills, projects, and contact information in a modern and responsive design.  
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🚀 Features
+- 🎨 Elegant **Black + Purple theme**  
+- 📱 Fully **responsive design**  
+- ✨ Smooth animations using **Framer Motion**  
+- 🛠️ Projects showcase with live links and previews  
+- 📧 Contact form with mail support  
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 🛠️ Tech Stack
+- **React.js** ⚛️  
+- **Tailwind CSS** 🎨  
+- **Framer Motion** 🎥  
+- **React Scroll** 📜  
+
+---
+
+## 🔗 Deployment
+You can view the live portfolio here:  
+👉 [Live Demo](https://ompimplepersonalportfolio.netlify.app/)  
+
+---
+
+## 📂 Installation & Setup
+Clone the repository and run it locally:
+
+```
+# Clone repo
+git clone https://github.com/OmPimple26/My-Personal-Portfolio.git
+
+# Navigate
+cd My-Personal-Portfolio
+
+# Install dependencies
+npm install
+
+# Run locally
+npm run dev
+```
+
+---
+
+📬 Contact
+
+Feel free to connect with me:
+
+- **Portfolio**: [ompimplepersonalportfolio.netlify.app](https://ompimplepersonalportfolio.netlify.app/)  
+- **GitHub**: [OmPimple26](https://github.com/OmPimple26)  
+- **LinkedIn**: [Your LinkedIn Profile](https://www.linkedin.com/in/om-pimple-0042822b3/)  
+- **Email**: [ompimple26@gmail.com](mailto:ompimple04@gmail.com)
+
+---
+
+✨ Built with ❤️ by Om Pimple
