@@ -53,8 +53,8 @@ Feel free to connect with me:
 
 - **Portfolio**: [ompimplepersonalportfolio.netlify.app](https://ompimplepersonalportfolio.netlify.app/)  
 - **GitHub**: [OmPimple26](https://github.com/OmPimple26)  
-- **LinkedIn**: [Your LinkedIn Profile](https://www.linkedin.com/in/om-pimple-0042822b3/)  
-- **Email**: [ompimple26@gmail.com](mailto:ompimple04@gmail.com)
+- **LinkedIn**: [https://www.linkedin.com/in/om-pimple-0042822b3/](https://www.linkedin.com/in/om-pimple-0042822b3/)  
+- **Email**: [ompimple04@gmail.com](mailto:ompimple04@gmail.com)
 
 ---
 
