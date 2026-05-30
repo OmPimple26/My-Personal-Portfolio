@@ -1,22 +1,40 @@
-import React from 'react'
+import React from "react";
+import { FaGithub, FaLinkedin } from "react-icons/fa";
 
 const Footer = () => {
   return (
-    <footer className="bg-black text-white py-6 text-center border-t border-gray-800">
-      <p className='text-green-500'>© {new Date().getFullYear()} Om Pimple. All Rights Reserved.</p>
-      <div className="flex justify-center mt-3 gap-6">
-        <a href="https://github.com/Ompimple26" target="_blank" rel="noopener noreferrer" className="hover:text-primary">
-          GitHub
+    <footer className="bg-[#0d0d0d] border-t border-gray-800 py-10 text-center text-gray-400">
+      <h2 className="text-2xl font-bold text-pink-500">Om Pimple</h2>
+
+      <p className="mt-3 text-gray-500">
+        Full Stack Developer | Spring Boot Developer | Machine Learning Explorer
+      </p>
+
+      <div className="flex justify-center gap-6 mt-6 text-2xl">
+        <a
+          href="https://github.com/Ompimple26"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="hover:text-pink-500 transition duration-300"
+        >
+          <FaGithub />
         </a>
-        <a href="https://www.linkedin.com/in/om-pimple-0042822b3" target="_blank" rel="noopener noreferrer" className="hover:text-primary">
-          LinkedIn
-        </a>
-        <a href="/Om_Pimple_Resume.pdf" download className="hover:text-primary">
-          Resume
+
+        <a
+          href="https://www.linkedin.com/in/om-pimple-0042822b3"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="hover:text-pink-500 transition duration-300"
+        >
+          <FaLinkedin />
         </a>
       </div>
-    </footer>
-  )
-}
 
-export default Footer
+      <p className="mt-6 text-sm text-gray-600">
+        © {new Date().getFullYear()} Om Pimple. All Rights Reserved.
+      </p>
+    </footer>
+  );
+};
+
+export default Footer;

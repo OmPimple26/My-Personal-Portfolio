@@ -1,30 +1,34 @@
-import React from 'react'
+import React from "react";
 import { Link } from "react-scroll";
 
 const Navbar = () => {
   return (
-    <nav className="fixed w-full bg-[#1a1a1a] text-white shadow z-50">
-      <div className="container mx-auto flex justify-between items-center py-4 px-6">
-        {/* <h1 className="text-2xl font-bold text-primary">Om Pimple</h1> */}
-        <h1 className="text-xl md:text-2xl font-bold text-primary">Om Pimple</h1>
-        {/* <ul className="flex space-x-6"> */}
-        <ul className="flex space-x-3 sm:space-x-4 md:space-x-6 text-sm sm:text-base md:text-lg">
-          {["Home", "About", "Skills", "Projects", "Contact"].map((item) => (
-            <li key={item}>
-              <Link
-                to={item.toLowerCase()}
-                smooth={true}
-                duration={500}
-                className="cursor-pointer hover:text-primary transition-colors duration-200"
-              >
-                {item}
-              </Link>
-            </li>
-          ))}
+    <nav className="fixed top-0 w-full bg-black/70 backdrop-blur-md border-b border-gray-800 text-white z-50">
+      <div className="max-w-7xl mx-auto flex justify-between items-center px-6 py-4">
+        <h1 className="text-2xl font-bold text-pink-500">
+          Om Pimple
+        </h1>
+
+        <ul className="flex gap-6 text-sm md:text-base">
+          {["Home", "About", "Skills", "Projects", "Contact"].map(
+            (item, index) => (
+              <li key={index}>
+                <Link
+                  to={item.toLowerCase()}
+                  smooth={true}
+                  duration={500}
+                  offset={-70}
+                  className="cursor-pointer hover:text-pink-500 transition duration-300"
+                >
+                  {item}
+                </Link>
+              </li>
+            )
+          )}
         </ul>
       </div>
     </nav>
-  )
-}
+  );
+};
 
-export default Navbar
+export default Navbar;
