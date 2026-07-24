@@ -4,7 +4,7 @@ import { FaGithub, FaLinkedin } from "react-icons/fa";
 const Footer = () => {
   return (
     <footer className="bg-[#0d0d0d] border-t border-gray-800 py-10 text-center text-gray-400">
-      <h2 className="text-2xl font-bold text-pink-500">Om Pimple</h2>
+      <h2 className="text-2xl font-bold text-purple-500">Om Pimple</h2>
 
       <p className="mt-3 text-gray-500">
         Full Stack Developer | Spring Boot Developer | Machine Learning Explorer
@@ -15,7 +15,7 @@ const Footer = () => {
           href="https://github.com/Ompimple26"
           target="_blank"
           rel="noopener noreferrer"
-          className="hover:text-pink-500 transition duration-300"
+          className="hover:text-green-500 transition duration-300"
         >
           <FaGithub />
         </a>
@@ -24,7 +24,7 @@ const Footer = () => {
           href="https://www.linkedin.com/in/om-pimple-0042822b3"
           target="_blank"
           rel="noopener noreferrer"
-          className="hover:text-pink-500 transition duration-300"
+          className="hover:text-blue-500 transition duration-300"
         >
           <FaLinkedin />
         </a>

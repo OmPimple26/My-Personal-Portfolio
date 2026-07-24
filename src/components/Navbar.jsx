@@ -5,7 +5,7 @@ const Navbar = () => {
   return (
     <nav className="fixed top-0 w-full bg-black/70 backdrop-blur-md border-b border-gray-800 text-white z-50">
       <div className="max-w-7xl mx-auto flex justify-between items-center px-6 py-4">
-        <h1 className="text-2xl font-bold text-pink-500">
+        <h1 className="text-2xl font-bold text-purple-500">
           Om Pimple
         </h1>
 
@@ -18,7 +18,7 @@ const Navbar = () => {
                   smooth={true}
                   duration={500}
                   offset={-70}
-                  className="cursor-pointer hover:text-pink-500 transition duration-300"
+                  className="cursor-pointer hover:text-purple-500 transition duration-300"
                 >
                   {item}
                 </Link>

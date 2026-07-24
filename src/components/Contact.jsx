@@ -13,7 +13,7 @@ const Contact = () => {
         transition={{ duration: 0.7 }}
         className="w-full max-w-2xl bg-[#111] border border-gray-800 rounded-3xl p-8 md:p-12 shadow-2xl"
       >
-        <h2 className="text-4xl font-bold text-center text-pink-500 mb-3">
+        <h2 className="text-4xl font-bold text-center text-purple-500 mb-3">
           Contact Me
         </h2>
 
@@ -33,7 +33,7 @@ const Contact = () => {
             name="name"
             placeholder="Your Name"
             required
-            className="w-full p-4 rounded-xl bg-black border border-gray-700 focus:border-pink-500 focus:ring-2 focus:ring-pink-500 outline-none transition duration-300"
+            className="w-full p-4 rounded-xl bg-black border border-gray-700 focus:border-purple-500 focus:ring-2 focus:ring-purple-500 outline-none transition duration-300"
           />
 
           <input
@@ -41,7 +41,7 @@ const Contact = () => {
             name="email"
             placeholder="Your Email"
             required
-            className="w-full p-4 rounded-xl bg-black border border-gray-700 focus:border-pink-500 focus:ring-2 focus:ring-pink-500 outline-none transition duration-300"
+            className="w-full p-4 rounded-xl bg-black border border-gray-700 focus:border-purple-500 focus:ring-2 focus:ring-purple-500 outline-none transition duration-300"
           />
 
           <textarea
@@ -49,12 +49,12 @@ const Contact = () => {
             rows="6"
             placeholder="Your Message"
             required
-            className="w-full p-4 rounded-xl bg-black border border-gray-700 focus:border-pink-500 focus:ring-2 focus:ring-pink-500 outline-none transition duration-300"
+            className="w-full p-4 rounded-xl bg-black border border-gray-700 focus:border-purple-500 focus:ring-2 focus:ring-purple-500 outline-none transition duration-300"
           ></textarea>
 
           <button
             type="submit"
-            className="w-full bg-pink-500 hover:bg-pink-600 text-white font-semibold py-4 rounded-xl transition duration-300 shadow-lg"
+            className="w-full bg-purple-500 hover:bg-purple-600 text-white font-semibold py-4 rounded-xl transition duration-300 shadow-lg"
           >
             Send Message
           </button>

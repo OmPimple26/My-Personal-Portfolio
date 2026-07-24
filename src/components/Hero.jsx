@@ -8,13 +8,13 @@ const Hero = () => {
       className="min-h-screen flex flex-col justify-center items-center bg-black text-center px-6 text-white relative overflow-hidden"
     >
       {/* Background Glow */}
-      <div className="absolute inset-0 bg-gradient-to-r from-pink-500/10 to-purple-500/10 blur-3xl pointer-events-none"></div>
+      <div className="absolute inset-0 bg-gradient-to-r from-purple-500/10 to-violet-500/10 blur-3xl pointer-events-none"></div>
 
       {/* Profile Image */}
       <motion.img
         src="/self1.png"
         alt="Profile"
-        className="rounded-full w-44 h-44 mb-6 shadow-2xl border-4 border-pink-500 object-cover z-10"
+        className="rounded-full w-44 h-44 mb-6 shadow-2xl border-4 border-purple-500 object-cover z-10"
         initial={{ scale: 0 }}
         animate={{ scale: 1 }}
         transition={{ duration: 0.8 }}
@@ -27,7 +27,7 @@ const Hero = () => {
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 1 }}
       >
-        Hi, I'm <span className="text-pink-500">Om Pimple</span>
+        Hi, I'm <span className="text-purple-500">Om Pimple</span>
       </motion.h1>
 
       {/* Subtitle */}
@@ -51,7 +51,7 @@ const Hero = () => {
           href="https://github.com/Ompimple26"
           target="_blank"
           rel="noopener noreferrer"
-          className="bg-gray-900 border border-gray-700 hover:border-pink-500 px-6 py-3 rounded-full transition duration-300"
+          className="bg-green-500 hover:bg-green-700 px-6 py-3 rounded-full transition duration-300"
         >
           GitHub
         </a>
@@ -68,7 +68,7 @@ const Hero = () => {
         <a
           href="/Om_Pimple_Resume.pdf"
           download
-          className="bg-pink-500 hover:bg-pink-600 px-6 py-3 rounded-full transition duration-300 shadow-lg"
+          className="bg-violet-500 hover:bg-violet-700 px-6 py-3 rounded-full transition duration-300 shadow-lg"
         >
           Download Resume
         </a>

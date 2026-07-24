@@ -5,6 +5,12 @@ const Projects = () => {
   const projects = [
     {
       title: "VeriCode",
+      link: "https://marketplace.visualstudio.com/items?itemName=prathmesh9304.luna-ai-chat",
+      tech: "VS Code Extension • TypeScript • React • AI",
+      desc: "AI-powered VS Code extension that provides intelligent code analysis, refactoring suggestions, saves chat history, and multi-LLM support to enhance developer productivity.",
+    },
+    {
+      title: "VeriCode",
       link: "https://github.com/OmPimple26/VeriCode--AI-Powered-Code-Quality-Analyzer-and-Refactoring-Suggestion-Tool",
       tech: "MongoDB • React.js • Express.js • Node.js • Python • AI",
       desc: "AI-powered code analyzer that detects bugs, code smells, and provides intelligent refactoring suggestions.",
@@ -74,7 +80,7 @@ const Projects = () => {
   return (
     <section id="projects" className="py-24 bg-black text-white px-6">
       <div className="max-w-7xl mx-auto">
-        <h2 className="text-4xl md:text-5xl font-extrabold text-center text-pink-500 mb-14">
+        <h2 className="text-4xl md:text-5xl font-extrabold text-center text-purple-500 mb-14">
           Projects
         </h2>
 
@@ -86,13 +92,13 @@ const Projects = () => {
               initial={{ opacity: 0, y: 40 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, delay: index * 0.1 }}
-              className="bg-[#111] border border-gray-800 rounded-3xl p-7 shadow-xl hover:border-pink-500 transition duration-300"
+              className="bg-[#111] border border-gray-800 rounded-3xl p-7 shadow-xl hover:border-purple-500 transition duration-300"
             >
               <h3 className="text-2xl font-bold mb-3 text-white">
                 {project.title}
               </h3>
 
-              <p className="text-pink-400 text-sm mb-4">{project.tech}</p>
+              <p className="text-purple-400 text-sm mb-4">{project.tech}</p>
 
               <p className="text-gray-400 leading-7 mb-6">{project.desc}</p>
 
@@ -100,7 +106,7 @@ const Projects = () => {
                 href={project.link}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-block bg-pink-500 hover:bg-pink-600 px-5 py-2 rounded-full transition duration-300"
+                className="inline-block bg-purple-500 hover:bg-purple-600 px-5 py-2 rounded-full transition duration-300"
               >
                 View Project
               </a>

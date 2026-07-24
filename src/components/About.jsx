@@ -13,16 +13,16 @@ const About = () => {
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.8 }}
       >
-        <h2 className="text-4xl md:text-5xl font-extrabold mb-8 text-pink-500">
+        <h2 className="text-4xl md:text-5xl font-extrabold mb-8 text-purple-500">
           About Me
         </h2>
 
         <p className="text-gray-300 text-lg md:text-xl leading-9">
           Hi, I'm{" "}
-          <span className="text-pink-400 font-semibold">Om Pimple</span>, a
+          <span className="text-purple-400 font-semibold">Om Pimple</span>, a
           passionate Full Stack Developer and Machine Learning enthusiast
           pursuing B.Tech in Computer Engineering at{" "}
-          <span className="text-pink-400">
+          <span className="text-purple-400">
             Dr. Babasaheb Ambedkar Technological University, Lonere
           </span>
           .
@@ -45,7 +45,7 @@ const About = () => {
           ].map((item, index) => (
             <span
               key={index}
-              className="px-5 py-2 rounded-full bg-pink-500/10 border border-pink-500 text-pink-300 text-sm hover:bg-pink-500 hover:text-white transition duration-300"
+              className="px-5 py-2 rounded-full bg-purple-500/10 border border-purple-500 text-purple-300 text-sm hover:bg-purple-500 hover:text-white transition duration-300"
             >
               {item}
             </span>
