@@ -4,6 +4,12 @@ import { motion } from "framer-motion";
 const Projects = () => {
   const projects = [
     {
+      title: "Eventora",
+      link: "https://eventora-frontend-alpha.vercel.app/",
+      tech: "MERN Stack • React • Node.js • Express • MongoDB",
+      desc: "Full-stack event management platform with JWT authentication, role-based access, email OTP verification, event creation and management, and an admin dashboard for managing users and events.",
+    },
+    {
       title: "VeriCode",
       link: "https://marketplace.visualstudio.com/items?itemName=prathmesh9304.luna-ai-chat",
       tech: "VS Code Extension • TypeScript • React • AI",
