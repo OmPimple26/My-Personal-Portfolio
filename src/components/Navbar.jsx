@@ -11,7 +11,7 @@ const Navbar = () => {
       <div className="max-w-7xl mx-auto flex justify-between items-center px-6 py-4">
 
         {/* Logo */}
-        <h1 className="text-2xl font-bold text-purple-500">
+        <h1 className="text-2xl font-bold text-orange-500">
           Om Pimple
         </h1>
 
@@ -24,7 +24,7 @@ const Navbar = () => {
                 smooth={true}
                 duration={500}
                 offset={-70}
-                className="cursor-pointer hover:text-purple-500 transition duration-300"
+                className="cursor-pointer hover:text-orange-500 transition duration-300"
               >
                 {item}
               </Link>
@@ -54,7 +54,7 @@ const Navbar = () => {
                   duration={500}
                   offset={-70}
                   onClick={() => setIsOpen(false)}
-                  className="cursor-pointer text-base hover:text-purple-500 transition duration-300"
+                  className="cursor-pointer text-base hover:text-orange-500 transition duration-300"
                 >
                   {item}
                 </Link>

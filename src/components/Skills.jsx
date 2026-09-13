@@ -106,7 +106,7 @@ const Skills = () => {
   return (
     <section id="skills" className="py-24 bg-[#0d0d0d] text-white px-6">
       <div className="max-w-7xl mx-auto text-center">
-        <h2 className="text-4xl md:text-5xl font-extrabold mb-14 text-purple-500">
+        <h2 className="text-4xl md:text-5xl font-extrabold mb-14 text-orange-500">
           Skills
         </h2>
 
@@ -118,7 +118,7 @@ const Skills = () => {
               initial={{ opacity: 0, y: 40 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ delay: index * 0.05 }}
-              className="bg-[#111] border border-gray-800 hover:border-purple-500 rounded-3xl p-6 flex flex-col items-center shadow-xl transition duration-300"
+              className="bg-[#111] border border-gray-800 hover:border-orange-500 rounded-3xl p-6 flex flex-col items-center shadow-xl transition duration-300"
             >
               {skill.icon}
 
