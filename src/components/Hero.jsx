@@ -68,7 +68,7 @@ const Hero = () => {
         <a
           href="/Om_Pimple_Resume.pdf"
           download
-          className="bg-violet-600 hover:bg-violet-700 px-6 py-3 rounded-full transition duration-300 shadow-lg"
+          className="bg-pink-500 hover:bg-pink-600 px-6 py-3 rounded-full transition duration-300 shadow-lg"
         >
           Download Resume
         </a>
