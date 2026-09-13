@@ -12,7 +12,7 @@ const Hero = () => {
 
       {/* Profile Image */}
       <motion.img
-        src="/self1.png"
+        src="/self2.png"
         alt="Profile"
         className="rounded-full w-44 h-44 mb-6 shadow-2xl border-4 border-orange-500 object-cover z-10"
         initial={{ scale: 0 }}
