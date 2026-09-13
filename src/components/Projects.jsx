@@ -10,10 +10,10 @@ const Projects = () => {
       desc: "Full-stack event management platform with JWT authentication, role-based access, email OTP verification, event creation and management, and an admin dashboard for managing users and events.",
     },
     {
-      title: "VeriCode",
+      title: "Luna AI",
       link: "https://marketplace.visualstudio.com/items?itemName=prathmesh9304.luna-ai-chat",
       tech: "VS Code Extension • TypeScript • React • AI",
-      desc: "AI-powered VS Code extension that provides intelligent code analysis, refactoring suggestions, saves chat history, and multi-LLM support to enhance developer productivity.",
+      desc: "AI-powered VS Code chat extension that provides intelligent code analysis, refactoring suggestions, saves chat history, and multi-LLM support to enhance developer productivity.",
     },
     {
       title: "VeriCode",
