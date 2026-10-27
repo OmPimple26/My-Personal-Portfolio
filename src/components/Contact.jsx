@@ -1,67 +1,80 @@
-import React from "react";
+import React, { useState } from "react";
 import { motion } from "framer-motion";
 
-const Contact = () => {
+const EMAIL = "ompimple04@gmail.com";
+
+export default function Contact() {
+  const [copied, setCopied] = useState(false);
+
+  async function copyEmail() {
+    try {
+      await navigator.clipboard.writeText(EMAIL);
+      setCopied(true);
+      window.setTimeout(() => setCopied(false), 1800);
+    } catch {
+      window.location.href = `mailto:${EMAIL}`;
+    }
+  }
+
   return (
     <section
       id="contact"
-      className="min-h-screen bg-gradient-to-b from-[#0d0d0d] to-black text-white flex items-center justify-center px-6 py-20"
+      className="scroll-mt-20 bg-[#0B1120] px-6 py-24 text-slate-100"
     >
       <motion.div
-        initial={{ opacity: 0, y: 60 }}
+        initial={{ opacity: 0, y: 30 }}
         whileInView={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.7 }}
-        className="w-full max-w-2xl bg-[#111] border border-gray-800 rounded-3xl p-8 md:p-12 shadow-2xl"
+        viewport={{ once: true, amount: 0.2 }}
+        transition={{ duration: 0.6 }}
+        className="mx-auto w-full max-w-3xl rounded-3xl border border-slate-700/70 bg-[#111C30] p-7 shadow-2xl md:p-12"
       >
-        <h2 className="text-4xl font-bold text-center text-orange-500 mb-3">
-          Contact Me
+        <p className="text-center text-sm font-semibold uppercase tracking-[0.25em] text-cyan-400">
+          Let&apos;s connect
+        </p>
+        <h2 className="mt-3 text-center text-4xl font-bold md:text-5xl">
+          Contact Me<span className="text-cyan-400">.</span>
         </h2>
-
-        <p className="text-gray-400 text-center mb-10">
-          Feel free to connect with me for collaborations, internships, or
-          exciting opportunities.
+        <p className="mx-auto mt-5 max-w-xl text-center leading-7 text-slate-400">
+          I&apos;m open to suitable software development opportunities,
+          collaborations, and conversations about technology.
         </p>
 
-        <form
-          action="mailto:ompimple@outlook.com"
-          method="POST"
-          encType="text/plain"
-          className="space-y-6"
-        >
-          <input
-            type="text"
-            name="name"
-            placeholder="Your Name"
-            required
-            className="w-full p-4 rounded-xl bg-black border border-gray-700 focus:border-orange-500 focus:ring-2 focus:ring-orange-500 outline-none transition duration-300"
-          />
-
-          <input
-            type="email"
-            name="email"
-            placeholder="Your Email"
-            required
-            className="w-full p-4 rounded-xl bg-black border border-gray-700 focus:border-orange-500 focus:ring-2 focus:ring-orange-500 outline-none transition duration-300"
-          />
-
-          <textarea
-            name="message"
-            rows="6"
-            placeholder="Your Message"
-            required
-            className="w-full p-4 rounded-xl bg-black border border-gray-700 focus:border-orange-500 focus:ring-2 focus:ring-orange-500 outline-none transition duration-300"
-          ></textarea>
-
-          <button
-            type="submit"
-            className="w-full bg-orange-500 hover:bg-orange-600 text-white font-semibold py-4 rounded-xl transition duration-300 shadow-lg"
+        <div className="mt-9 flex flex-col items-center justify-center gap-3 sm:flex-row">
+          <a
+            href={`mailto:${EMAIL}?subject=${encodeURIComponent("Portfolio inquiry")}`}
+            className="inline-flex w-full items-center justify-center rounded-xl bg-cyan-400 px-6 py-3 font-semibold text-slate-950 transition hover:bg-cyan-300 sm:w-auto"
           >
-            Send Message
-          </button>
-        </form>
+            Email Me
+          </a>
+
+          {/* <button
+            type="button"
+            onClick={copyEmail}
+            className="w-full rounded-xl border border-slate-600 px-6 py-3 font-semibold transition hover:border-cyan-400 hover:text-cyan-300 sm:w-auto"
+          >
+            {copied ? "Email Copied!" : "Copy Email Address"}
+          </button> */}
+
+          <a
+            href="https://www.linkedin.com/in/om-pimple-0042822b3"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="w-full rounded-xl border border-slate-600 px-6 py-3 text-center font-semibold transition hover:border-cyan-400 hover:text-cyan-300 sm:w-auto"
+          >
+            LinkedIn ↗
+          </a>
+          <a
+            href="https://github.com/OmPimple26"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="w-full rounded-xl border border-slate-600 px-6 py-3 text-center font-semibold transition hover:border-cyan-400 hover:text-cyan-300 sm:w-auto"
+          >
+            GitHub ↗
+          </a>
+        </div>
+
+        <p className="mt-6 text-center text-sm text-slate-500">{EMAIL}</p>
       </motion.div>
     </section>
   );
-};
-
-export default Contact;
+}

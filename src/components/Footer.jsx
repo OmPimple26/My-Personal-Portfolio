@@ -1,66 +1,45 @@
 import React from "react";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
 
-const Footer = () => {
+export default function Footer() {
   return (
-    <footer className="bg-[#0d0d0d] border-t border-gray-800 py-10 px-6 text-center text-gray-400">
-
-      {/* Name */}
-      <h2 className="text-2xl md:text-3xl font-bold text-orange-500 tracking-wide">
-        Om Pimple
-      </h2>
-
-      {/* Tagline */}
-      <p className="mt-3 text-sm md:text-base text-gray-500">
-        Full Stack Developer | Spring Boot Developer | Machine Learning Explorer
+    <footer className="border-t border-slate-800 bg-[#080D18] px-6 py-10 text-center text-slate-400">
+      <a
+        href="#home"
+        className="text-2xl font-bold tracking-wide text-slate-100"
+      >
+        Om Pimple<span className="text-cyan-400">.</span>
+      </a>
+      <p className="mt-3 text-sm text-slate-500">
+        Java &amp; Spring Boot Developer | Full Stack Developer
       </p>
 
-      {/* Social Links */}
-      <div className="flex justify-center gap-5 mt-7">
-
+      <div className="mt-6 flex justify-center gap-4">
         <a
-          href="https://github.com/Ompimple26"
+          href="https://github.com/OmPimple26"
           target="_blank"
           rel="noopener noreferrer"
           aria-label="GitHub"
-          className="w-11 h-11 flex items-center justify-center rounded-full
-                     bg-gray-900 border border-gray-800 text-xl
-                     hover:text-white hover:border-green-500
-                     hover:bg-green-500/10
-                     hover:-translate-y-1
-                     transition-all duration-300"
+          className="flex h-11 w-11 items-center justify-center rounded-full border border-slate-700 bg-[#111C30] text-xl transition hover:-translate-y-1 hover:border-cyan-400 hover:text-cyan-300"
         >
           <FaGithub />
         </a>
-
         <a
           href="https://www.linkedin.com/in/om-pimple-0042822b3"
           target="_blank"
           rel="noopener noreferrer"
           aria-label="LinkedIn"
-          className="w-11 h-11 flex items-center justify-center rounded-full
-                     bg-gray-900 border border-gray-800 text-xl
-                     hover:text-blue-500 hover:border-blue-500
-                     hover:bg-blue-500/10
-                     hover:-translate-y-1
-                     transition-all duration-300"
+          className="flex h-11 w-11 items-center justify-center rounded-full border border-slate-700 bg-[#111C30] text-xl transition hover:-translate-y-1 hover:border-cyan-400 hover:text-cyan-300"
         >
           <FaLinkedin />
         </a>
-
       </div>
 
-      {/* Divider */}
-      <div className="max-w-xl mx-auto border-t border-gray-800 mt-6 pt-4">
-
-        <p className="text-xs md:text-sm text-gray-600">
-          © {new Date().getFullYear()} Om Pimple. All Rights Reserved.
+      <div className="mx-auto mt-7 max-w-xl border-t border-slate-800 pt-5">
+        <p className="text-xs text-slate-600">
+          © {new Date().getFullYear()} Om Pimple. All rights reserved.
         </p>
-
       </div>
-
     </footer>
   );
-};
-
-export default Footer;
+}

@@ -1,70 +1,65 @@
 import React, { useState } from "react";
 import { Link } from "react-scroll";
 
-const Navbar = () => {
+const menuItems = [
+  "Home",
+  "About",
+  "Experience",
+  "Skills",
+  "Projects",
+  "Contact",
+];
+
+export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
 
-  const menuItems = ["Home", "About", "Skills", "Projects", "Contact"];
+  const renderLink = (item, mobile = false) => (
+    <Link
+      key={item}
+      to={item.toLowerCase()}
+      smooth
+      duration={500}
+      offset={-75}
+      onClick={() => {
+        if (mobile) setIsOpen(false);
+      }}
+      className="cursor-pointer transition duration-300 hover:text-cyan-400"
+    >
+      {item}
+    </Link>
+  );
 
   return (
-    <nav className="fixed top-0 w-full bg-black/70 backdrop-blur-md border-b border-gray-800 text-white z-50">
-      <div className="max-w-7xl mx-auto flex justify-between items-center px-6 py-4">
+    <nav className="fixed top-0 z-50 w-full border-b border-slate-700/60 bg-[#0B1120]/90 text-slate-100 backdrop-blur-xl">
+      <div className="mx-auto flex max-w-7xl items-center justify-between px-6 py-4">
+        <a href="#home" className="text-xl font-bold tracking-tight">
+          Om Pimple<span className="text-cyan-400">.</span>
+        </a>
 
-        {/* Logo */}
-        <h1 className="text-2xl font-bold text-orange-500">
-          Om Pimple
-        </h1>
-
-        {/* Desktop Menu */}
-        <ul className="hidden md:flex gap-6 text-sm md:text-base">
+        <ul className="hidden items-center gap-6 text-sm lg:flex">
           {menuItems.map((item) => (
-            <li key={item}>
-              <Link
-                to={item.toLowerCase()}
-                smooth={true}
-                duration={500}
-                offset={-70}
-                className="cursor-pointer hover:text-orange-500 transition duration-300"
-              >
-                {item}
-              </Link>
-            </li>
+            <li key={item}>{renderLink(item)}</li>
           ))}
         </ul>
 
-        {/* Mobile Hamburger Button */}
         <button
-          onClick={() => setIsOpen(!isOpen)}
-          className="md:hidden text-white text-2xl focus:outline-none"
-          aria-label="Toggle menu"
+          type="button"
+          onClick={() => setIsOpen((previous) => !previous)}
+          className="text-2xl text-cyan-400 lg:hidden"
+          aria-label={isOpen ? "Close menu" : "Open menu"}
+          aria-expanded={isOpen}
         >
           {isOpen ? "✕" : "☰"}
         </button>
       </div>
 
-      {/* Mobile Menu */}
       {isOpen && (
-        <div className="md:hidden bg-black/95 border-t border-gray-800">
-          <ul className="flex flex-col items-center py-4 gap-5">
-            {menuItems.map((item) => (
-              <li key={item}>
-                <Link
-                  to={item.toLowerCase()}
-                  smooth={true}
-                  duration={500}
-                  offset={-70}
-                  onClick={() => setIsOpen(false)}
-                  className="cursor-pointer text-base hover:text-orange-500 transition duration-300"
-                >
-                  {item}
-                </Link>
-              </li>
-            ))}
-          </ul>
-        </div>
+        <ul className="flex flex-col items-center gap-5 border-t border-slate-700 bg-[#0B1120] py-6 lg:hidden">
+          {menuItems.map((item) => (
+            <li key={item}>{renderLink(item, true)}</li>
+          ))}
+        </ul>
       )}
     </nav>
   );
-};
-
-export default Navbar;
+}
